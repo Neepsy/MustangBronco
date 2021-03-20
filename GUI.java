@@ -50,23 +50,28 @@ public class GUI {
         frame.setVisible(true);
     }
 
-
+    //Set font for all components
     private static void setFonts(JFrame frame)
     {
-        //Set font for all components
         for(Component component : frame.getContentPane().getComponents())
         {
             component.setFont(FONT);
         }
     }
 
+    //Directly set output text
     public void setOutput(String text)
     {
         output.setText(text);
     }
 
-    public void setInput(String text) { input.setText(text); }
+    //Programmatically set input value
+    public void setInput(String text)
+    {
+        input.setText(text);
+    }
 
+    //Getters for various GUI components
     public JTextField getInput()
     {
         return input;
